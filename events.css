@@ -1,0 +1,127 @@
+.events
+{
+    left: 20px;
+    bottom: 20px;
+    position: absolute;
+    width: 920px;
+    height: 450px;
+    background-color: rgba(0, 0, 0, 0.952);
+    display: none;
+    overflow-y: scroll;
+    border-radius: 10px;
+    
+    outline: solid 3px rgb(223, 223, 223);
+    cursor: move;
+    min-width: 100px;
+    min-height: 100px;
+    z-index: 10;
+    
+}
+
+
+.resizer
+{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-radius: 30%;
+    background-color: rgba(255, 255, 255, 0);
+    z-index: 12;
+}
+.resizer.nw
+{
+    top: 20px;
+    left: 20px;
+    cursor: nw-resize;
+    display: none;
+}
+.resizer.ne
+{
+    top: -1px;
+    right: -1px;
+    cursor: ne-resize;
+    background-color: rgba(255, 235, 205, 0.158);
+}
+.resizer.sw
+{
+    bottom: -1px;
+    left: -1px;
+    cursor: sw-resize;
+    display: none;
+}
+.resizer.se
+{
+    bottom: 0px;
+    right: 0px;
+    cursor: se-resize;
+    background-color: rgba(255, 235, 205, 0.103);
+    display: none;
+}
+
+.events::-webkit-scrollbar
+{
+    width: 15px;
+}
+.events::-webkit-scrollbar-track
+{
+    border-radius: 10px;
+    width: 10px;
+    background: transparent;
+}
+.events::-webkit-scrollbar-thumb
+{
+    width: 10px;
+    background: rgba(179, 179, 179, 0.493);
+    border-radius: 10px;
+}
+.event1
+{
+    position: relative;
+    width: 900px;
+    height: 900px;
+    outline: solid 2px rgba(15, 15, 15, 0.171);
+    /* align-items: center; */
+    padding: 15px;
+    /* display: block; */
+    /* padding: 20px; */
+    display: flex;
+    flex-direction: column;
+}
+.events .event1 img
+{
+    /* margin: 10px; */
+    margin-bottom: 20px;
+    position: relative;
+    width: 500px;
+    /* height: 400px; */
+    outline: solid 1px white;
+    cursor: auto;
+}
+.event2
+{
+    position: relative;
+    top: 600px;
+    width: 900px;
+    height: 900px;
+    outline: solid 2px rgba(15, 15, 15, 0.171);
+    /* align-items: center; */
+    padding: 15px;
+    /* display: block; */
+    /* padding: 20px; */
+    display: flex;
+    flex-direction: column;
+    /* padding-bottom: 100px; */
+}
+.events .event2 img
+{
+    margin-bottom: 20px;
+    /* margin: 10px; */
+    position: relative;
+    width: 500px;
+    /* height: 400px; */
+    outline: solid 1px white;
+}
+.events.active901
+{
+    display: block;
+}

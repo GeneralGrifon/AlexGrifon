@@ -1,0 +1,38 @@
+.workpage
+{
+    position: absolute;
+    transform: translate3d(500px, 1400px, -500px) rotateY(-90deg);
+    flex-direction: column-reverse;
+    /* margin: 100px; */
+    /* padding: 100px; */
+    
+}
+
+
+.workpage iframe
+{
+    position: absolute;
+    border: solid 1px white;
+    border-radius: 15px;
+    
+}
+#w1
+{
+    top: 330px;
+    left: -200px;
+}
+#w2
+{
+    top: 330px;
+    left: 250px;
+}
+#w3
+{
+    top: 600px;
+    left: -200px;
+}
+#w4
+{
+    top: 600px;
+    left: 250px;
+}
