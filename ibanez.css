@@ -1,0 +1,37 @@
+.ibanez
+{
+    top: 0;
+    left: 300px;
+    position: absolute;
+    width: 400px;
+    height: 1000px;
+    /* outline: 1px solid red; */
+    transform: translate3d(-1300px , -500px, 1300px) rotateY(120deg);
+    display: none;
+}
+.ibanez.active6000
+{
+    display: none;
+}
+.ibanez img
+{
+    transform: rotate(55deg);
+    top: -300px;
+    position: absolute;
+    /* width: 50%; */
+    height: 100%;
+    /* outline: blue 1px solid; */
+    transition: 0.5s;
+    transition-delay: 0.2s;
+    
+}
+.ibanez img:hover
+{
+    transform: rotate(55deg);
+    top: -450px;
+    position: absolute;
+    /* width: 50%; */
+    height: 130%;
+    /* outline: blue 1px solid; */
+    
+}

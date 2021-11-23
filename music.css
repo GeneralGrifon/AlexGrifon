@@ -1,0 +1,106 @@
+.music
+{
+    position: absolute;
+    width: 160px;
+    height: 160px;
+    border: solid 4px white;
+    border-radius: 100px;
+    transform: translate3d(-660px, 200px, 0);
+    z-index: 19;
+    transition: 0.5s;
+    /* mix-blend-mode: screen; */
+    /* outline: solid 3px rgb(255, 145, 0); */
+    background: linear-gradient(
+      180deg,
+      /* rgba(255,255,255,0.6) 0%, */
+      rgba(255, 255, 255, 0.5) 0%,
+      rgba(255, 255, 255, 0.322) 40%,
+      rgba(255, 255, 255, 0.185) 45%,
+      rgba(255,255,255,0.1) 50%,
+      rgba(0,0,0,0.0) 50%,
+      rgba(0,0,0,0.0) 50%,
+      rgba(0,0,0,0.0) 60%,
+      rgba(25, 114, 248, 0.329) 100%
+    ); /* W3C */
+    border-image: none;
+    border-style: inset;
+    border-width: 4px;
+}
+.music:hover
+{
+    z-index: 12;
+    transition: 1s;
+    background: linear-gradient(
+      180deg,
+      /* rgba(255,255,255,0.6) 0%, */
+      rgba(255, 255, 255, 0.5) 0%,
+      rgba(255, 255, 255, 0.322) 40%,
+      rgba(255, 255, 255, 0.185) 45%,
+      rgba(255,255,255,0.1) 50%,
+      rgba(0,0,0,0.0) 50%,
+      rgba(0,0,0,0.0) 50%,
+      rgba(0,0,0,0.0) 60%,
+      rgba(25, 114, 248, 0.438) 100%
+    ); 
+    border-image: none;
+    border-style: inset;
+    border-width: 6px;
+    border: solid 4px rgb(255, 255, 255);
+    cursor: pointer;
+    transform: translate3d(-660px, 200px, 0) scale(1.1); 
+
+}
+
+
+.music .m
+{
+    position: relative;
+    width: 80px;
+    top: 33px;
+    left: 33px;
+    filter: invert(1);
+    /* animation: rotate  10s linear infinite; */
+    cursor: pointer;
+    z-index: 200;
+    /* outline: solid 3px red; */
+    transform: translateZ(1px);
+}
+.music:hover img
+{
+    animation: animate 10s linear infinite;
+    cursor: pointer;
+    /* transform: scale(2); */
+}
+.music img 
+{
+    animation: rotate 10s infinite linear;
+}
+
+
+.musicpink
+{
+    transform: translate3d(-3px, -3px, -10px);
+    background:rgba(25, 114, 248, 0);
+    position: absolute;
+    width: 155px;
+    height: 155px;
+    border-radius: 50%;
+    /* transform: translate3d(0px, 0px, 0); */
+    z-index: -10;
+    transition: 0.3s;
+    border: solid 5px rgba(60, 255, 0, 0);
+    /* mix-blend-mode: lighten; */
+    
+}
+.music:hover .musicpink
+{
+    background:rgba(19, 113, 255, 0.192);
+    mix-blend-mode: lighten;
+    box-shadow: 0 0 2px rgb(25, 114, 248),
+    0 0 5px rgb(25, 114, 248),
+    0 0 12px rgb(25, 114, 248),
+    0 0 22px rgb(25, 114, 248)
+    ;
+    
+
+}

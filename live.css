@@ -1,0 +1,104 @@
+.block
+{
+    top: 10px;
+    right: 5px;
+    position: absolute;
+    width: 666px;
+    height: 930px;
+    background-color: rgba(0, 0, 0, 0.897);
+    display: none;
+    border-radius: 5px;
+    outline: solid 3px white;
+    /* z-index: -1; */
+    
+}
+
+.page
+{
+    top: 5px;
+    left: 5px;
+    position: relative;
+    width: 1000px;
+    height: 220px;
+    outline: solid 2px rgb(0, 0, 0);
+    border-radius: 5px;
+    /* display: none; */
+    /* z-index: 10; */
+}
+.band
+{
+    position: absolute;
+    bottom: -15px;
+    left: 10px;
+    /* color: green; */
+    /* height: 50px; */
+    width: 60%;
+    /* filter: invert(1); */
+    outline: solid 2px black;
+    /* padding-top: 30px; */
+    outline: solid 2px rgb(255, 255, 255);
+    border-radius: 15px;
+    /* background-color: transparent; */
+}
+
+.cover
+{
+    transform: translate(5px, 5px);
+    width: 150px;
+}
+.block.active900
+{
+    display: block;
+}
+
+.page p
+{
+    width: 460px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    margin-left: 160px;
+    padding-left: 15px;
+    /* margin-right: 10px; */
+    /* padding-right: 100px; */
+    color: honeydew;
+    font-size: 1.2rem;
+    outline: solid 2px rgb(65, 65, 65);
+    border-radius: 10px;
+}
+    audio::-webkit-media-controls-panel {
+    background-color: black;
+    }
+    audio::-webkit-media-controls-mute-button {
+    background-color: #ffffff;
+    border-radius: 50%;
+    outline: solid 1px black;
+    }
+    audio::-webkit-media-controls-current-time-display {
+    color: #fff;
+    }
+    audio::-webkit-media-controls-time-remaining-display {
+    color: rgb(0, 195, 255);
+    }
+    audio::-webkit-media-controls-timeline {
+    background-color: #2b2b2b;
+    border-radius: 15px;
+    margin-left: 10px;
+    margin-right: 10px;
+    }
+
+     audio::-webkit-media-controls-volume-slider {
+    background-color: #00c3ff;
+    border-radius: 25px;
+    padding-left: 8px;
+    padding-right: 8px;
+    }
+    audio::-webkit-media-controls-play-button
+    {
+      background-color: rgb(255, 255, 255);
+      border-radius: 50%;
+    }
+    audio::-webkit-media-controls-timeline
+    {
+        color: chartreuse;
+    }

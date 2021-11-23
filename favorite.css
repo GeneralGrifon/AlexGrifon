@@ -1,0 +1,226 @@
+.favorite
+{
+    position: absolute;
+    background: rgba(0, 0, 0, 0.363);
+    text-align: center;
+    border-radius: 100px;
+    right: 440px;
+    transform: scale(1.5);
+    top: -270px;
+    box-shadow: 0 0 3px 0 rgb(255, 255, 255);
+    border: 2px solid #ffffff;
+    width: 100px;
+    height: 100px;
+    transition: 0.5s;
+    cursor: pointer;
+    /* overflow: hidden; */
+
+
+    background:rgba(0, 0, 0, 0.055);
+    position: absolute;
+    /* width: 155px; */
+    /* height: 155px; */
+    /* border: solid 4px white; */
+    /* border-radius: 100px; */
+    border-radius: 50%;
+    /* transform: translate3d(-560px, -110px, 0px); */
+    z-index: 20;
+    transition: 0.5s;
+
+    background: linear-gradient(
+      180deg,
+      /* rgba(255,255,255,0.6) 0%, */
+      rgba(255, 255, 255, 0.5) 0%,
+      rgba(255, 255, 255, 0.322) 40%,
+      rgba(255, 255, 255, 0.185) 45%,
+      rgba(255,255,255,0.1) 50%,
+      rgba(0,0,0,0.0) 50%,
+      rgba(0,0,0,0.0) 50%,
+      rgba(0,0,0,0.0) 60%,
+      rgba(25, 114, 248, 0.438) 100%
+    ); 
+    border-image: none;
+    border-style: inset;
+    
+
+}
+.favorite.active2
+{
+    /* transform: translateZ(711px) translateX(150px); */
+    transform: scale(1.5);
+    position: absolute;
+    background: rgba(0, 0, 0, 0.603);
+    text-align: center;
+    border-radius: 15px;
+    right: -360px;
+    top: -430px;
+    box-shadow: 0 0 3px 0 rgb(255, 255, 255);
+    border: 2px solid #ffffff;
+    width: 588px;
+    height: 530px;
+    /* overflow: visible; */
+    
+}
+.favorite ul
+{
+    
+    /* display: inline-flex; */
+    list-style: none;
+    color: rgb(0, 0, 0);
+    font-size: 2rem;
+    padding: 0px;
+    
+   
+   
+}
+
+
+.favorite ul li
+{
+    width: 0px;
+    margin: 0px;
+    padding: 15px;
+    transition: 1s;
+    opacity: 0;
+    
+}
+.favorite.active2 ul li
+{
+    position: absolute;
+    opacity: 1;
+    width: 70px;
+    margin: 15px;
+    padding: 15px;
+    transition: 0.3s;
+    right: 190px;
+    
+    
+}
+.favorite ul li a
+{
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.664);
+    transition: 0.2s;
+}
+.favorite.active2 ul li a
+{
+    color: rgb(255, 255, 255);  
+}
+.favorite iframe
+{
+    position: absolute;
+    width: 0px;
+    height: 0px;
+    transition: 0.5s;
+    margin: 0;
+    padding: 0;
+    transition: 0.2s;
+    /* transform: rotate(350deg); */
+    transition-delay: 0s;
+    
+    
+    
+}
+.favorite.active2 iframe
+{
+    position: absolute;
+    /* transform: scale(0.5); */
+    width: 384px;
+    height: 216px;
+    border-radius: 15px;
+    border: 2px solid rgb(255, 255, 255); 
+    box-shadow: 0 0 3px 0 rgb(255, 255, 255);
+}
+
+.v1 
+{
+    top: 0px;
+    position: absolute;
+    left: 0px;
+    
+}
+.v2 
+{
+    top: 144px;
+    position: absolute;
+    left: 100px;
+}
+.v3 
+{
+    position: absolute;
+    left: 200px;
+    top: 288px;
+}
+
+.favorite #v1
+{
+    transition-delay: 0s;
+    
+}
+.favorite #v2
+{
+    transition-delay: 0s;
+}
+.favorite #v3
+{
+    transition-delay: 0s;
+}
+
+.favorite.active2 #v1
+{
+    transition-delay: 0.2s;
+}
+.favorite.active2 #v2
+{
+    transition-delay: 0.4s;
+}
+.favorite.active2 #v3
+{
+    transition-delay: 0.6s;
+}
+
+
+
+
+
+
+.v1:hover
+{
+    z-index: 10;
+}
+.v2:hover
+{
+    z-index: 10;
+}
+.v3:hover
+{
+    z-index: 10;
+}
+
+.fav
+{
+    position: absolute;
+    width: 60px;
+    top: 20px;
+    left: 18px;
+    transform: scale(0.7);
+    filter: invert();
+    animation: rotate 10s infinite linear;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.favorite.active2 .fav
+{
+    position: absolute;
+    transform: scale(0.7);
+    filter: invert();
+    transition: 0.5s;
+    top: 200px;
+    left: -100px;
+    animation: rotate 10s infinite linear;
+}
+.favorite:hover .fav 
+{
+    animation: animate 10s infinite linear;
+    /* cursor: pointer; */
+}

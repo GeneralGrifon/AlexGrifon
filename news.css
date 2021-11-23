@@ -1,0 +1,90 @@
+button
+{
+    position: absolute;
+    top: 50px;
+    right: 100px;
+    width: 250px;
+    height: 100px;
+    background-color: rgb(59, 128, 255);
+    border-radius: 15px;
+    transition: 1s;
+    cursor: pointer;  
+    color: rgba(255, 255, 255, 0.575);
+    border-radius: 15px;
+    transition: 1s;
+
+    background: linear-gradient(
+      175deg,
+      rgba(255, 255, 255, 0.925) 0%,
+      rgba(255,255,255,0.6) 5%,
+      rgba(255,255,255,0.1) 50%,
+      rgba(0,0,0,0.0) 50%,
+      rgba(0,0,0,0.0) 100%
+    ); /* W3C */
+    border-color: rgba(255, 255, 255, 0.4);
+    border-image: none;
+    border-style: inset;
+    border-width: 3px;
+    cursor: pointer;  
+}
+button:hover
+{
+    position: absolute;
+    top: 50px;
+    right: 100px;
+    width: 250px;
+    height: 100px;
+    background-color: rgb(59, 128, 255);
+    border-radius: 15px;
+    transition: 1s;
+    cursor: pointer;  
+    color: rgba(255, 255, 255, 0.575);
+    border-radius: 15px;
+    transition: 1s;
+    border-color: rgba(255, 255, 255, 0.4);
+    border-image: none;
+    border-style: inset;
+    border-width: 3px;
+    cursor: pointer;  
+    background: linear-gradient(
+      175deg,
+      rgba(255, 255, 255, 0.925) 0%,
+      rgba(255,255,255,0.6) 5%,
+      rgba(255,255,255,0.1) 60%,
+      rgba(0,0,0,0.0) 60%,
+      rgba(0,0,0,0.0) 100%
+    );
+}
+
+.button
+{
+    border-radius: 15px;
+    z-index: -1;
+    position: absolute;
+    top: 50px;
+    right: 100px;
+    width: 250px;
+    height: 100px;
+    background-color: rgb(59, 128, 255);
+
+}
+
+button a
+{
+    
+    position: relative;
+    font-size: 2rem;
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.24);
+    transition: 1s;
+    
+}
+button:hover a
+{
+    color: rgb(255, 255, 255);
+    text-shadow: 0 0 2px rgb(255, 255, 255),
+                 0 0 5px rgb(255, 255, 255),
+                 0 0 10px rgb(255, 255, 255),
+                 0 0 20px rgb(255, 255, 255),
+                 0 0 40px rgb(0, 60, 255);
+}

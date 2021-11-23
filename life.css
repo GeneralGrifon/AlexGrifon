@@ -1,0 +1,76 @@
+.life
+{
+    top: -2500px;
+    left: -200px;
+    position: absolute;
+    width: 1000px;
+    height: 580px;
+    outline: 1px solid rgb(255, 255, 255);
+    overflow-y: scroll;
+    border-radius: 10px;
+    transition: 0.5s;
+    /* display: none; */
+}
+.life:hover
+{
+    height: 800px;
+}
+.life .lifecontent img
+{
+    margin: 20px;
+    outline: 1px solid rgb(255, 255, 255);
+}
+
+.life .lifecontent #life1
+{
+    margin-top: 60px;
+    width: 90%;
+}
+.life .lifecontent #life2
+{
+    width: 90%;
+}
+.life .lifecontent #life3
+{
+    width: 90%;
+}
+
+.life::-webkit-scrollbar
+{
+    /* margin: 10px; */
+    width: 15px;
+    /* height: 100px; */
+    /* background-color: blueviolet; */
+}
+.life::-webkit-scrollbar-track
+{
+    border-radius: 10px;
+    width: 10px;
+    background: transparent;
+    /* height: 100px; */
+    /* background: linear-gradient(0deg, rgb(255, 251, 0) 0%, rgb(151, 0, 63) 100%); */
+}
+.life::-webkit-scrollbar-thumb
+{
+    width: 10px;
+    /* height: 100px; */
+    /* background-color: rgb(0, 255, 229); */
+    /* background: transparent; */
+    background: rgba(255, 255, 255, 0.336);
+    /* box-shadow: 0px 0px 0px 100vh rgb(0, 0, 0); */
+    /* outline: solid 2px white; */
+    border-radius: 10px;
+}
+.life .close
+{
+    z-index: 2;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    filter: invert(1);
+    outline: solid 1px black;
+}
+
