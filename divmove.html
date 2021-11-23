@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="divmove.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div id="one">1
+            <img imgone src="/cursour.png" alt="">
+        </div>
+        <div id="two">2
+            <img id="imgtwo" src="/icon.png" alt="">
+        </div>
+
+    </div>
+
+<!-- 
+    
+ -->
+
+<script>
+    var div1 = document.getElementById('one');
+
+// set an event listener for it
+div1.addEventListener('click',function(){
+//   create a new div
+var div2 =  document.createElement('div');
+//   giv that div an id of two
+div2.setAttribute("id", "two");
+//   append the new div to the dom
+this.parentNode.appendChild(div2);
+//   remove the clicked div
+this.parentNode.removeChild(this);
+});
+</script>
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,498 @@
+.buttons
+{
+    position: absolute;
+    width: 300px;
+    /*flex-direction: column;*/
+    display: flex;
+    align-items: center;
+    /* transform: translateX(300px); */
+    transform: translate3d(-400px, -550px, -300px);
+    transform-style: preserve-3d;
+    transition: 1s;
+    
+    
+    
+
+}
+
+.button{
+  padding: 15px;
+  color: rgba(255, 255, 255, 0.575);
+    font-size: 4rem;
+    /* width: 800px; */
+    /* background-color: rgba(255, 255, 255, 0.247); */
+    border-radius: 15px;
+    transition: 1s;
+
+    background: linear-gradient(
+      175deg,
+      rgba(255,255,255,0.8) 0%,
+      rgba(255,255,255,0.6) 5%,
+      rgba(255,255,255,0.1) 50%,
+      rgba(0,0,0,0.0) 50%,
+      rgba(0,0,0,0.0) 100%
+    ); /* W3C */
+    border-color: rgba(255, 255, 255, 0.4);
+    border-image: none;
+    border-style: inset;
+    border-width: 3px;
+    cursor: pointer;
+    /* text-shadow: 0 0 7px rgb(255, 157, 214); */
+    /* -webkit-text-stroke: 2px rgb(255, 0, 221); */
+}
+
+.button:hover 
+{
+    color: rgba(255, 255, 255, 0.99);
+    text-shadow: 0px 0px 2px rgba(255, 255, 255, 0.99), 0px 0px 4px rgba(255, 255, 255, 0.75);
+    border-color: rgba(255, 255, 255, 0.4);
+    box-shadow:
+      0 1px 0 0 rgba(255, 255, 255, 0.4) inset,
+      0 2px 6px rgba(0, 0, 0, 0.5),
+      0 10px rgba(0, 0, 0, 0.05) inset,
+      0 0 5px 2px rgba(255, 255, 255, 0.75),
+      0 0 10px 2px rgba(255, 255, 255, 0.75) inset;
+      transform: rotateY(20deg);
+      
+}
+  
+
+
+.button2{
+  color: rgba(255, 255, 255, 0.575);
+   padding: 15px;
+    z-index: 12;
+    font-size: 4rem;
+    border-radius: 15px;
+    transition: 1s;
+    transform: translate3d(-900px, -1000px, -200px) rotateX(-55deg);
+
+    background: linear-gradient(
+      175deg,
+      rgba(255,255,255,0.8) 0%,
+      rgba(255,255,255,0.6) 5%,
+      rgba(255,255,255,0.1) 50%,
+      rgba(0,0,0,0.0) 50%,
+      rgba(0,0,0,0.0) 100%
+    ); /* W3C */
+    border-color: rgba(255, 255, 255, 0.4);
+    border-image: none;
+    border-style: inset;
+    border-width: 3px;
+    cursor: pointer;     
+}
+.button2:hover 
+{
+    color: rgba(255, 255, 255, 0.99);
+    text-shadow: 0px 0px 2px rgba(255, 255, 255, 0.99), 0px 0px 4px rgba(255, 255, 255, 0.75);
+    border-color: rgba(255, 255, 255, 0.4);
+    box-shadow:
+      0 1px 0 0 rgba(255, 255, 255, 0.4) inset,
+      0 2px 6px rgba(0, 0, 0, 0.5),
+      0 10px rgba(0, 0, 0, 0.05) inset,
+      0 0 5px 2px rgba(255, 255, 255, 0.75),
+      0 0 10px 2px rgba(255, 255, 255, 0.75) inset;
+      transform: translate3d(-900px, -950px, -200px) rotateX(-55deg);
+      
+}
+
+/*
+
+background: linear-gradient(
+      170deg,
+      rgba(255,255,255,0.8) 0%,
+      rgba(255,255,255,0.6) 20%,
+      rgba(255,255,255,0.1) 50%,
+      rgba(0,0,0,0.0) 50%,
+      rgba(0,0,0,0.0) 100%
+    ); /* W3C */
+    /* border-color: rgba(255, 255, 255, 0.4); */
+    /* border-image: none; */
+    /* border-style: inset; */
+    /* border-width: 1px; */
+    
+    /* box-shadow: */
+      /* 0 1px 0 0 rgba(255, 255, 255, 0.4) inset, */
+      /* 0 2px 6px rgba(0, 0, 0, 0.5), */
+      /* 0 -4px 8px -1px rgba(255, 255, 255, 0.4) inset; */
+ 
+.button-startleft
+{
+  padding: 15px;
+  color: rgba(255, 255, 255, 0.575);
+    font-size: 4rem;
+    /* background-color: rgba(255, 255, 255, 0.247); */
+    border-radius: 15px;
+    transition: 1s;
+    transform: translate3d(-2000px, 500px, 750px) rotateY(-250deg);
+    background: linear-gradient(
+      170deg,
+      rgba(255,255,255,0.8) 0%,
+      rgba(255,255,255,0.6) 20%,
+      rgba(255,255,255,0.1) 50%,
+      rgba(0,0,0,0.0) 50%,
+      rgba(0,0,0,0.0) 100%
+    ); /* W3C */
+    border-color: rgba(255, 255, 255, 0.4);
+    border-image: none;
+    border-style: inset;
+    border-width: 3px;
+    cursor: pointer;
+}
+.button-startleft:hover
+{
+    color: rgba(255, 255, 255, 0.99);
+    text-shadow: 0px 0px 2px rgba(255, 255, 255, 0.99), 0px 0px 4px rgba(255, 255, 255, 0.75);
+    border-color: rgba(255, 255, 255, 0.4);
+    box-shadow:
+      0 1px 0 0 rgba(255, 255, 255, 0.4) inset,
+      0 2px 6px rgba(0, 0, 0, 0.5),
+      0 10px rgba(0, 0, 0, 0.05) inset,
+      0 0 5px 2px rgba(255, 255, 255, 0.75),
+      0 0 10px 2px rgba(255, 255, 255, 0.75) inset;
+      transform: translate3d(-2000px, 500px, 750px) rotateY(-250deg) rotateY(20deg);
+}
+
+.button-skyleft
+{
+    background: linear-gradient(
+      to bottom,  
+      rgba(180,180,180,0.8) 0%,
+      rgba(180,180,180,0.5) 3%,
+      rgba(180,180,180,0.1) 45%,
+      rgba(0,0,0,0) 0%,
+      rgba(0,0,0,0.3) 28%,
+      rgba(0,0,0,0.3) 60%,
+      rgba(0,0,0,0.3) 65%,
+      rgba(255,255,255,0.3) 90%,
+      rgba(0,0,0,0.3) 95%,
+      rgba(0,0,0,0.3) 100%
+    ); /* W3C */
+    border-color: rgba(0, 0, 0, 0.6);
+    border-image: none;
+    border-style: solid;
+    border-width: 0px;
+
+    box-shadow:
+      0 1px 0 0 rgba(255, 255, 255, 0.4) inset,
+      0 2px 6px rgba(0, 0, 0, 0.5),
+      0 10px rgba(0, 0, 0, 0.05) inset;
+    font-size: 5rem;
+    /* background-color: rgba(255, 255, 255, 0.247); */
+    border-radius: 15px;
+    transition: 1s;
+    transform: translate3d(-1450px, 200px, 1100px) rotateY(90deg);
+}
+.button-startsex
+{
+  color: rgba(255, 255, 255, 0.281);
+  padding-left: 15px;
+  padding-right: 15px;
+    background-color: rgba(0, 0, 0, 0.25);
+    background: linear-gradient(
+      170deg,  
+      rgba(255,255,255,0.9) 0%,
+      rgba(255,255,255,0.7) 20%,
+      rgba(255,255,255,0.2) 55%,
+      rgba(0,0,0,0.0) 56%,
+      rgba(0,0,0,0.0) 100%
+    ); /* W3C */
+    border-color: rgba(255, 255, 255, 0.2);
+    border-image: none;
+    border-style: groove;
+    border-width: 3px;
+    border-bottom-width: 2px;
+    
+    box-shadow:
+      0 -4px 8px -1px rgba(255, 255, 255, 0.4) inset;
+    font-size: 3rem;
+    /* background-color: rgba(255, 255, 255, 0.247); */
+    border-radius: 10px;
+    transition: 1s;
+    transform: translate3d(-150px, 0px, -4800px) rotateX(0deg);
+    cursor: pointer;
+}
+.button-startsex:hover
+{
+  color: rgba(255, 255, 255, 0.99);
+    text-shadow: 0px 0px 2px rgba(255, 255, 255, 0.99), 0px 0px 4px rgba(255, 255, 255, 0.75);
+    border-color: rgba(255, 255, 255, 0.4);
+    box-shadow:
+      0 1px 0 0 rgba(255, 255, 255, 0.4) inset,
+      0 2px 6px rgba(0, 0, 0, 0.5),
+      0 10px rgba(0, 0, 0, 0.05) inset,
+      0 0 5px 2px rgba(255, 255, 255, 0.75),
+      0 0 10px 2px rgba(255, 255, 255, 0.75) inset;
+}
+
+.button3
+{
+    font-size: 5rem;
+    /* background-color: rgba(255, 255, 255, 0.247); */
+    border-radius: 15px;
+    transition: 1s;
+    transform: translate3d(390px, 700px, 200px) rotateY(-100deg);
+    padding: 15px;
+  color: rgba(255, 255, 255, 0.575);
+    font-size: 4rem;
+    /* width: 800px; */
+    /* background-color: rgba(255, 255, 255, 0.247); */
+    border-radius: 15px;
+    transition: 1s;
+
+    background: linear-gradient(
+      175deg,
+      rgba(255,255,255,0.8) 0%,
+      rgba(255,255,255,0.6) 5%,
+      rgba(255,255,255,0.1) 50%,
+      rgba(0,0,0,0.0) 50%,
+      rgba(0,0,0,0.0) 100%
+    ); /* W3C */
+    border-color: rgba(255, 255, 255, 0.4);
+    border-image: none;
+    border-style: inset;
+    border-width: 3px;
+    display: none;
+
+}
+.button3:hover
+{
+    color: rgba(255, 255, 255, 0.99);
+    text-shadow: 0px 0px 2px rgba(255, 255, 255, 0.99), 0px 0px 4px rgba(255, 255, 255, 0.75);
+    border-color: rgba(255, 255, 255, 0.4);
+    box-shadow:
+      0 1px 0 0 rgba(255, 255, 255, 0.4) inset,
+      0 2px 6px rgba(0, 0, 0, 0.5),
+      0 10px rgba(0, 0, 0, 0.05) inset,
+      0 0 5px 2px rgba(255, 255, 255, 0.75),
+      0 0 10px 2px rgba(255, 255, 255, 0.75) inset;
+      /* transform: translate3d(-2500px, 600px, 1750px) rotateY(-250deg) rotateY(20deg); */
+}
+.button-down
+{
+    font-size: 5rem;
+    /* background-color: rgba(255, 255, 255, 0.247); */
+    border-radius: 15px;
+    transition: 1s;
+    transform: translate3d(-600px, 800px, 500px) rotateY(-40deg);
+    background: linear-gradient(
+      170deg,
+      rgba(255,255,255,0.8) 0%,
+      rgba(255,255,255,0.6) 20%,
+      rgba(255,255,255,0.1) 50%,
+      rgba(0,0,0,0.0) 50%,
+      rgba(0,0,0,0.0) 100%
+    ); /* W3C */
+    border-color: rgba(255, 255, 255, 0.4);
+    border-image: none;
+    border-style: inset;
+    border-width: 3px;
+    /* -webkit-text-stroke: 1px rgb(255, 255, 255); */
+}
+.button-down:hover
+{
+    color: rgba(255, 255, 255, 0.99);
+    text-shadow: 0px 0px 2px rgba(255, 255, 255, 0.99), 0px 0px 4px rgba(255, 255, 255, 0.75);
+    border-color: rgba(255, 255, 255, 0.4);
+    box-shadow:
+      0 1px 0 0 rgba(255, 255, 255, 0.4) inset,
+      0 2px 6px rgba(0, 0, 0, 0.5),
+      0 10px rgba(0, 0, 0, 0.05) inset,
+      0 0 5px 2px rgba(255, 255, 255, 0.75),
+      0 0 10px 2px rgba(255, 255, 255, 0.75) inset;
+      transform: translate3d(-600px, 800px, 500px) rotateY(-40deg) rotateY(20deg);
+}
+.button-downstart
+{
+    font-size: 5rem;
+    /* background-color: rgba(255, 255, 255, 0.247); */
+    border-radius: 15px;
+    transition: 1s;
+    transform: translate3d(-1000px, 1500px, -200px) rotateY(-40deg);
+    background: linear-gradient(
+      170deg,
+      rgba(255,255,255,0.8) 0%,
+      rgba(255,255,255,0.6) 20%,
+      rgba(255,255,255,0.1) 50%,
+      rgba(0,0,0,0.0) 50%,
+      rgba(0,0,0,0.0) 100%
+    ); /* W3C */
+    border-color: rgba(255, 255, 255, 0.4);
+    border-image: none;
+    border-style: inset;
+    border-width: 3px;
+    /* text-shadow: 0 0 7px rgb(255, 157, 214); */
+}
+.button-downstart:hover
+{
+    color: rgba(255, 255, 255, 0.99);
+    text-shadow: 0px 0px 2px rgba(255, 255, 255, 0.99), 0px 0px 4px rgba(255, 255, 255, 0.75);
+    border-color: rgba(255, 255, 255, 0.4);
+    box-shadow:
+      0 1px 0 0 rgba(255, 255, 255, 0.4) inset,
+      0 2px 6px rgba(0, 0, 0, 0.5),
+      0 10px rgba(0, 0, 0, 0.05) inset,
+      0 0 5px 2px rgba(255, 255, 255, 0.75),
+      0 0 10px 2px rgba(255, 255, 255, 0.75) inset;
+    transform: translate3d(-1000px, 1500px, -200px) rotateY(-40deg) rotateY(20deg);
+}
+.button-gifon
+{
+
+  font-size: 30px;
+  position: absolute;
+  color: aliceblue;
+  top: -580px;
+  right: 560px;
+  width: 150px;
+  height: 150px;
+  border-radius: 100px;
+  /* border: solid 1px white; */
+  background: rgba(0, 0, 0, 0.418);
+  border: solid 3px white;
+  cursor: pointer;
+
+
+
+  background:rgba(0, 0, 0, 0.055);
+    position: absolute;
+    border: solid 4px white;
+    border-radius: 50%;
+    z-index: 20;
+    transition: 0.5s;
+    background: linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0.5) 0%,
+      rgba(255, 255, 255, 0.322) 40%,
+      rgba(255, 255, 255, 0.185) 45%,
+      rgba(255,255,255,0.1) 50%,
+      rgba(0,0,0,0.0) 50%,
+      rgba(0,0,0,0.0) 50%,
+      rgba(0,0,0,0.0) 60%,
+      rgba(25, 114, 248, 0.438) 100%
+    ); 
+    border-image: none;
+    border-style: inset;
+}
+.button-gifon:hover
+{
+  transform: scale(1.1);
+  border: solid 4px white;
+}
+.messblue
+{
+    top: 22px;
+    left: 22px;
+    background:rgba(60, 255, 0, 0);
+    position: absolute;
+    transform: scale(1.5);
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    z-index: -10;
+    transition: 0.3s;
+    border: solid 5px rgba(60, 255, 0, 0);
+    mix-blend-mode: lighten;
+}
+.button-gifon:hover .messblue
+{
+  
+    /* mix-blend-mode: lighten; */
+    background:rgba(19, 113, 255, 0.192);
+    /* mix-blend-mode: lighten; */
+    box-shadow: 0 0 2px rgb(25, 114, 248),
+    0 0 5px rgb(25, 114, 248),
+    0 0 12px rgb(25, 114, 248),
+    0 0 22px rgb(25, 114, 248)
+    ;
+}
+
+.button-fifon:hover img
+{
+  animation: animate 10s linear infinite;
+}
+.button-gifon img
+{
+  position: absolute;
+  width: 75px;
+  top: 35px;
+  left: 35px;
+  filter: invert(1);
+  animation: rotate 10s infinite linear;
+
+}
+.button-gifoff
+{
+  color: aliceblue;
+  position: absolute;
+  top: 100px;
+  right: -1100px;
+  width: 100px;
+  height: 50px;
+  border-radius: 10px;
+  border: solid 1px white;
+  background: rgba(64, 224, 208, 0);
+}
+
+.playtrack
+{
+  top: 530px;
+  left: 20px;
+  /* margin: 50px; */
+  color: aliceblue;
+  position: relative;
+  width: 150px;
+  height: 100px;
+  background: rgba(0, 0, 0, 0.185);
+  border-radius: 15px;
+  border: solid 3px white;
+  cursor: pointer;
+  font-size: 20px;
+}
+.pausetrack
+{
+  font-size: 20px;
+  top: 530px;
+  right: -30px;
+  color: aliceblue;
+  position: relative;
+  width: 150px;
+  height: 100px;
+  background: rgba(0, 0, 0, 0.185);
+  border-radius: 15px;
+  border: solid 3px white;
+  z-index: 10;
+  cursor: pointer;
+}
+#link
+{
+  transform: translateY(880px) translateX(430px) translateZ(-270px);
+}
+#show
+{
+  transform: translateY(880px) translateX(420px) translateZ(-270px);
+}
+#nice
+{
+  transform: translateY(880px) translateX(410px) translateZ(-270px) rotateY(0deg);
+  /* visibility: hidden; */
+}
+#link:hover
+{
+  transform: translateY(880px) translateX(430px) translateZ(-170px);
+}
+#show:hover
+{
+  transform: translateY(880px) translateX(420px) translateZ(-170px);
+}
+#nice:hover
+{
+  transform: translateY(880px) translateX(410px) translateZ(-170px) rotateY(0deg);
+  /* visibility: hidden; */
+}
+
+
+
+
+
+

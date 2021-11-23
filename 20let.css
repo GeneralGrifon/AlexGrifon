@@ -1,0 +1,185 @@
+@import url(//db.onlinewebfonts.com/c/22065c5e6b9fb52ee13ab8a0c7e38fe3?family=FrankfurterDMed);
+
+
+@font-face {font-family: "FrankfurterDMed"; src: url("//db.onlinewebfonts.com/t/22065c5e6b9fb52ee13ab8a0c7e38fe3.eot"); src: url("//db.onlinewebfonts.com/t/22065c5e6b9fb52ee13ab8a0c7e38fe3.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/22065c5e6b9fb52ee13ab8a0c7e38fe3.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/22065c5e6b9fb52ee13ab8a0c7e38fe3.woff") format("woff"), url("//db.onlinewebfonts.com/t/22065c5e6b9fb52ee13ab8a0c7e38fe3.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/22065c5e6b9fb52ee13ab8a0c7e38fe3.svg#FrankfurterDMed") format("svg"); }
+body
+{
+    /* display: flex; */
+    background-color: rgb(255, 255, 255);
+    /* width: 100%; */
+    /* height: 100%; */
+}
+.fire
+{
+    position: absolute;
+}
+
+.fire h1
+{
+    font-family: system-ui;
+    top: -30px;
+    position: relative;
+    margin-left: 50px;
+    /* font-size: 5rem; */
+    color: #d18024;
+    font-size: 70px;
+  line-height: 53px;
+  font-family: system-ui;
+  font-weight: 800;
+  width: 200%;
+  height: 100px;
+  background-color: rgba(181, 187, 186, 0.76);
+  z-index: -2;
+  border: solid 1px black;
+}
+.fire h2
+{
+    font-family: system-ui;
+    position: relative;
+    top: -80px;
+    margin-left: 50px;
+    font-size: 1.5rem;
+    color: #d18024;
+}
+
+.container
+{
+    overflow-y: scroll;
+    top: 200px;
+    position: absolute;
+    margin-left: 50px;
+
+    width: 1500px;
+    height: 600px;
+    outline: 2px solid rgb(97, 69, 56);
+    /* background-color: rgb(190, 188, 181); */
+    background-color: #d3d3d3;
+    border-radius: 5px;
+    
+}
+.container p
+{
+    font-size: 2rem;
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 2rem;
+
+  font-family: system-ui;
+  /* font-weight: 800; */
+}
+button
+{
+    position: absolute;
+    top: 50px;
+    right: -700px;
+    width: 250px;
+    height: 100px;
+    background-color: rgb(59, 128, 255);
+    border-radius: 15px;
+    transition: 1s;
+    cursor: pointer;  
+    color: rgba(255, 255, 255, 0.575);
+    border-radius: 15px;
+    transition: 1s;
+
+    background: linear-gradient(
+      175deg,
+      rgba(255, 255, 255, 0.925) 0%,
+      rgba(255,255,255,0.6) 5%,
+      rgba(255,255,255,0.1) 50%,
+      rgba(0,0,0,0.0) 50%,
+      rgba(0,0,0,0.0) 100%
+    ); /* W3C */
+    border-color: rgba(255, 255, 255, 0.4);
+    border-image: none;
+    border-style: inset;
+    border-width: 3px;
+    cursor: pointer;  
+}
+button:hover
+{
+    position: absolute;
+    top: 50px;
+    right: -700px;
+    width: 250px;
+    height: 100px;
+    background-color: rgb(59, 128, 255);
+    border-radius: 15px;
+    transition: 1s;
+    cursor: pointer;  
+    color: rgba(255, 255, 255, 0.575);
+    border-radius: 15px;
+    transition: 1s;
+    border-color: rgba(255, 255, 255, 0.4);
+    border-image: none;
+    border-style: inset;
+    border-width: 3px;
+    cursor: pointer;  
+    background: linear-gradient(
+      175deg,
+      rgba(255, 255, 255, 0.925) 0%,
+      rgba(255,255,255,0.6) 5%,
+      rgba(255,255,255,0.1) 60%,
+      rgba(0,0,0,0.0) 60%,
+      rgba(0,0,0,0.0) 100%
+    );
+}
+
+.button
+{
+    border-radius: 15px;
+    z-index: -1;
+    position: absolute;
+    top: 50px;
+    right: -700px;
+    width: 250px;
+    height: 100px;
+    background-color: rgb(59, 128, 255);
+
+}
+
+button a
+{
+    
+    position: relative;
+    font-size: 2rem;
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.24);
+    transition: 1s;
+    
+}
+button:hover a
+{
+    color: rgb(255, 255, 255);
+    text-shadow: 0 0 2px rgb(255, 255, 255),
+                 0 0 5px rgb(255, 255, 255),
+                 0 0 10px rgb(255, 255, 255),
+                 0 0 20px rgb(255, 255, 255),
+                 0 0 40px rgb(0, 60, 255);
+}
+
+.container::-webkit-scrollbar
+{
+    /* margin: 10px; */
+    width: 15px;
+    /* height: 100px; */
+    /* background-color: blueviolet; */
+}
+.container::-webkit-scrollbar-track
+{
+    border-radius: 10px;
+    width: 10px;
+    background: transparent;
+    /* height: 100px; */
+    /* background: linear-gradient(0deg, rgb(255, 251, 0) 0%, rgb(151, 0, 63) 100%); */
+}
+.container::-webkit-scrollbar-thumb
+{
+    width: 10px;
+    /* height: 100px; */
+    /* background-color: rgb(0, 255, 229); */
+    /* background: transparent; */
+    background: rgba(255, 255, 255, 0.336);
+    /* box-shadow: 0px 0px 0px 100vh rgb(0, 0, 0); */
+    /* outline: solid 2px white; */
+    border-radius: 10px;
+}

@@ -1,0 +1,36 @@
+#model 
+{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: -500px;
+    left: -900px;
+    transform: translateZ(-800px);
+  
+    z-index: -10;
+  }
+  #model:hover
+  {
+    filter: brightness(2);
+  }
+
+  canvas {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    overflow: hidden;
+    outline: none;
+    
+  }
+  
+  /*body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overscroll-behavior: none;
+    background-image: url("https://sun9-54.userapi.com/impg/xZ3R74oa7pLtvZvWKJZSiEvbDI5l223K8XtfaA/nX5ltp77d_U.jpg?size=1920x1280&quality=96&sign=b9b67d33494080162d5332db32e9dcce&type=album");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+  }
+  
