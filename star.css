@@ -1,0 +1,257 @@
+.star
+{
+    position: absolute;
+    right: 450px;
+    top: 80px;
+    background: rgba(0, 0, 0, 0.363);
+    text-align: center;
+    border-radius: 100px;
+    transform: scale(1.5);
+    width: 100px;
+    height: 100px;
+    transition: 0.5s;
+    cursor: pointer;
+    background:rgba(0, 0, 0, 0.055);
+    position: absolute;
+    border: solid 3px white;
+    border-radius: 50%;
+    z-index: 20;
+    transition: 0.5s;
+    background: linear-gradient(
+      180deg,
+      /* rgba(255,255,255,0.6) 0%, */
+      rgba(255, 255, 255, 0.5) 0%,
+      rgba(255, 255, 255, 0.322) 40%,
+      rgba(255, 255, 255, 0.185) 45%,
+      rgba(255,255,255,0.1) 50%,
+      rgba(0,0,0,0.0) 50%,
+      rgba(0,0,0,0.0) 50%,
+      rgba(0,0,0,0.0) 60%,
+      rgba(25, 114, 248, 0.438) 100%
+    ); 
+    border-image: none;
+    border-style: inset;
+    cursor: pointer;
+
+}
+
+.star:hover
+{
+    transform: scale(1.6);
+    border: solid 3px white;
+}
+.star.active3
+{
+    
+    position: absolute;
+    background: rgba(0, 0, 0, 0.363);
+    text-align: center;
+    border-radius: 330px;
+    right: 100px;
+    top: -190px;
+    box-shadow: 0 0 3px 0 rgb(255, 255, 255);
+    border: 1px solid #ffffff;
+    width: 330px;
+    height: 330px;
+}
+
+.starblue
+{
+
+    transform: translate3d(-3px, -3px, 0px);
+    background:rgba(60, 255, 0, 0);
+    position: absolute;
+    /* transform: scale(1.5); */
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    /* transform: translate3d(0px, 0px, 0); */
+    z-index: -10;
+    transition: 0.3s;
+    border: solid 5px rgba(60, 255, 0, 0);
+    mix-blend-mode: lighten;
+    
+}
+.star:hover .starblue
+{
+
+    background:rgba(19, 113, 255, 0.192);
+    box-shadow: 0 0 2px rgb(25, 114, 248),
+    /* 0 0 5px rgb(25, 114, 248), */
+    /* 0 0 12px rgb(25, 114, 248), */
+    0 0 22px rgb(25, 114, 248)
+    ;
+
+}
+
+
+.star ul
+{
+    
+    display: inline-flex;
+    list-style: none;
+    color: rgb(0, 0, 0);
+    /* font-size: 2rem; */
+    padding: 0px;
+    
+   
+   
+}
+
+
+.star ul li
+{
+    width: 0px;
+    margin: 0px;
+    padding: 15px;
+    transition: 1s;
+    opacity: 0;
+    
+}
+.star.active3 ul li
+{
+    position: absolute;
+    opacity: 1;
+    width: 70px;
+    margin: 15px;
+    padding: 15px;
+    transition: 0.3s;
+    right: 190px;
+    
+    
+}
+.star ul li a
+{
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.664);
+    transition: 0.2s;
+    
+}
+.star.active3 ul li a
+{
+    color: rgb(255, 255, 255);  
+}
+#s
+{
+    position: absolute;
+    width: 55px;
+    top: 25px;
+    left: 20px;
+    transform: scale(0.7);
+    filter: invert();
+    transition: opacity 0.5s;
+    animation: rotate 10s infinite linear;
+    z-index: 100;
+    /* mix-blend-mode: screen; */
+    
+    
+}
+#s:hover
+{
+    animation: animate 10s infinite linear;
+}
+
+.star.active3 #s
+{
+    opacity: 1;
+    transition: opacity 0.5s;
+  
+}
+.star.active3 ul li 
+{
+    left: 80px;
+}
+
+.star #bitch1
+{
+    position: absolute;
+    width: 0px;
+    height: 0px;
+    transition: 0.5s;
+    margin: 0;
+    padding: 0;
+    transition: 0.2s;
+    transform: rotate(350deg);
+    
+    
+}
+.star #bitch2
+{
+    position: absolute;
+    width: 0px;
+    height: 0px;
+    transition: 0.5s;
+    margin: 0;
+    padding: 0;
+    transition: 0.2s;
+    transform: rotate(350deg);
+    
+    
+}
+.star.active3 #bitch1
+{
+    position: relative;
+    transform: scale(0.5);
+    width: 150px;
+    height: 150px; 
+    border-radius: 200px;
+    border: 2px solid rgb(255, 255, 255); 
+    box-shadow: 0 0 3px 0 rgb(255, 255, 255);
+    
+}
+.star.active3 #bitch2
+{
+    position: relative;
+
+    width: 150px;
+    height: 150px; 
+    border-radius: 200px;
+    border: 2px solid rgb(255, 255, 255); 
+    box-shadow: 0 0 3px 0 rgb(255, 255, 255);
+}
+.star.active3 #bitch1:hover
+{
+    position: relative;
+    transform: scale(0.7);
+    width: 150px;
+    height: 150px; 
+    border-radius: 200px;
+    border: 2px solid rgb(255, 0, 191); 
+    box-shadow: 0 0 15px 0 rgb(255, 0, 191)
+}
+.star.active3 #bitch2:hover
+{
+    position: relative;
+
+    width: 250px;
+    height: 400px;
+    transform: translateX(-100px) translateY(-100px) scale(1.5);
+ 
+    border-radius: 20px;
+    border: 2px solid rgb(255, 0, 191); 
+    box-shadow: 0 0 15px 0 rgb(255, 0, 191)
+}
+.star .vs-1
+{
+    position: relative;
+    top: 50px;
+    left: 35px;
+}
+.star .vs-2
+{
+    position: relative;
+    left: -5px;
+    top: 50px;
+}
+.star .vs-3
+{
+    position: relative;
+    top: 150px;
+    left: -155px;
+}
+.star .vs-4
+{
+    position: relative;
+    left: -410px;
+    top: 150px;
+}

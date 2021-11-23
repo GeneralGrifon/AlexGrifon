@@ -1,0 +1,110 @@
+.work
+{
+    background:rgba(0, 0, 0, 0.055);
+    position: absolute;
+    width: 155px;
+    height: 155px;
+    border: solid 4px white;
+    /* border-radius: 100px; */
+    border-radius: 50%;
+    transform: translate3d(-560px, -110px, 0px);
+    z-index: 20;
+    transition: 0.5s;
+
+    background: linear-gradient(
+      180deg,
+      /* rgba(255,255,255,0.6) 0%, */
+      rgba(255, 255, 255, 0.5) 0%,
+      rgba(255, 255, 255, 0.322) 40%,
+      rgba(255, 255, 255, 0.185) 45%,
+      rgba(255,255,255,0.1) 50%,
+      rgba(0,0,0,0.0) 50%,
+      rgba(0,0,0,0.0) 50%,
+      rgba(0,0,0,0.0) 60%,
+      /* rgba(25, 222, 248, 0.171) 100% */
+      rgba(25, 114, 248, 0.438) 100%
+    ); 
+    border-image: none;
+    border-style: inset;
+
+    /* mix-blend-mode: lighten; */
+}
+.workrad
+{
+    border-image: linear-gradient(#00eeff 20%, #00e300ff 90%);
+    border-image-slice: 1;
+   
+}
+.workgreen
+{
+
+    transform: translate3d(-5px, -41px, -10px);
+    background:rgba(60, 255, 0, 0);
+    position: absolute;
+    width: 155px;
+    height: 155px;
+    border-radius: 50%;
+    /* transform: translate3d(0px, 0px, 0); */
+    z-index: -10;
+    transition: 0.3s;
+    border: solid 5px rgba(60, 255, 0, 0);
+    
+}
+.work:hover .workgreen
+{
+    /* background:rgba(25, 222, 248, 0.158); */
+    mix-blend-mode: lighten;
+    /* background:rgba(19, 113, 255, 0.192); */
+    mix-blend-mode: lighten;
+    /* box-shadow: 0 0 2px rgb(25, 222, 248),
+    0 0 5px rgb(25, 222, 248),
+    0 0 12px rgb(25, 222, 248),
+    0 0 22px rgb(25, 222, 248)
+    ; */
+    background:rgba(19, 113, 255, 0.192);
+    box-shadow: 0 0 2px rgb(25, 114, 248),
+    /* 0 0 5px rgb(25, 114, 248), */
+    /* 0 0 12px rgb(25, 114, 248), */
+    0 0 22px rgb(25, 114, 248)
+    ;
+
+
+}
+.work:hover
+{
+    z-index: 12;
+    transition: 1s;
+    background: linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0.5) 0%,
+      rgba(255, 255, 255, 0.322) 40%,
+      rgba(255, 255, 255, 0.185) 45%,
+      rgba(255,255,255,0.1) 50%,
+      rgba(0,0,0,0.0) 50%,
+      rgba(0,0,0,0.0) 50%,
+      rgba(0,0,0,0.0) 60%,
+      /* rgba(0, 225, 255, 0.479)  100% */
+      rgba(25, 114, 248, 0.527) 100%
+    ); 
+    border-image: none;
+    border-style: inset;
+    cursor: pointer;     
+    transform: translate3d(-560px, -110px, 0px) scale(1.1);
+    border: solid 4px white;
+}
+
+.work img
+{
+    position: relative;
+    width: 80px;
+    /* top: 25px; */
+    /* left: 25px; */
+    filter: invert(1);
+    animation: rotate  10s linear infinite;
+    cursor: pointer;
+}
+.work:hover img
+
+{
+    animation: animate 10s linear infinite;
+}

@@ -1,0 +1,270 @@
+.out
+{
+    outline: 3px solid rgb(22, 189, 255);
+    width: 900px;
+    height: 600px;
+    font-size: 2rem;
+    /* mix-blend-mode: lighten; */
+    font-family: 'subway-ticker.regular';
+    z-index: -1;
+    
+    color: rgb(0, 153, 255);
+    left: 100px;
+    top: -300px;
+    position: absolute;
+
+    background: rgba(0, 0, 255, 0.295);
+    box-shadow: 0 0 2px rgb(34, 75, 255),
+                /* 0 0 5px rgb(20, 43, 255),
+                0 0 15px rgb(20, 43, 255), */
+                0 0 25px rgb(20, 43, 255);
+    /* outline: 1px solid rgb(43, 153, 255); */
+
+    /* transform: rotateY(-30deg); */
+    transform-style: preserve-3d;
+    overflow-y: scroll;
+    border-radius: 10px;
+    transition: 0.5s;
+
+    text-shadow: 0 0 2px white,
+        0 0 7px rgba(255, 255, 255, 0.774),
+        /* 0 0 10px rgba(255, 255, 255, 0.562), */
+        /* 0 0 20px rgba(255, 255, 255, 0.452), */
+        0 0 30px rgb(0, 81, 255);
+    
+    /* perspective: 3000px; */
+}
+
+.out2
+{
+    height: 600px;
+    width: 900px;
+    font-size: 2rem;
+    outline: 2px solid rgb(0, 81, 255);
+
+
+    font-family: 'subway-ticker.regular';
+    z-index: 2;
+
+    color: rgba(255, 255, 255, 0.452);
+    left: 100px;
+    top: -300px;
+    position: absolute;
+
+    background: rgba(0, 0, 255, 0);
+    text-shadow: 0 0 2px white,
+        0 0 5px rgba(255, 255, 255, 0.582),
+        /* 0 0 10px rgba(255, 255, 255, 0.562), */
+        /* 0 0 20px rgba(255, 255, 255, 0.452), */
+        0 0 30px rgba(36, 105, 255, 0.89);
+
+
+    /* transform: rotateY(-30deg); */
+    transform-style: preserve-3d;
+    overflow-y: scroll;
+    border-radius: 10px;
+    transition: 0.5s;
+    animation: flicker 10s linear infinite;
+    /* filter: brightness(2); */
+    /* mix-blend-mode: lighten; */
+    
+    /* perspective: 3000px; */
+}
+
+/* .outblur
+{
+    z-index: 1;
+    position: absolute;
+    left: 95px;
+    top: -305px;
+    width: 910px;
+    height: 610px;
+    transform-style: preserve-3d;
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    transition: 0.5s;
+
+} */
+
+
+.out::-webkit-scrollbar
+{
+    /* margin: 10px; */
+    width: 15px;
+    /* height: 100px; */
+    /* background-color: blueviolet; */
+}
+.out::-webkit-scrollbar-track
+{
+    border-radius: 10px;
+    width: 10px;
+    background: transparent;
+    /* height: 100px; */
+    /* background: linear-gradient(0deg, rgb(255, 251, 0) 0%, rgb(151, 0, 63) 100%); */
+}
+.out::-webkit-scrollbar-thumb
+{
+    width: 10px;
+    background:transparent;
+    /* height: 100px; */
+    /* background-color: rgb(0, 255, 229); */
+    /* background: transparent; */
+    /* background: rgba(255, 255, 255, 0.178); */
+    /* box-shadow: 0px 0px 0px 100vh rgb(0, 0, 0); */
+    /* outline: solid 2px white; */
+    border-radius: 10px;
+}
+.out2::-webkit-scrollbar
+{
+    /* margin: 10px; */
+    width: 15px;
+    /* height: 100px; */
+    /* background-color: blueviolet; */
+}
+.out2::-webkit-scrollbar-track
+{
+    border-radius: 10px;
+    width: 10px;
+    background: transparent;
+    /* height: 100px; */
+    /* background: linear-gradient(0deg, rgb(255, 251, 0) 0%, rgb(151, 0, 63) 100%); */
+}
+.out2::-webkit-scrollbar-thumb
+{
+    width: 10px;
+    /* height: 100px; */
+    /* background-color: rgb(0, 255, 229); */
+    background: transparent;
+    /* background: rgba(255, 255, 255, 0.178); */
+    /* box-shadow: 0px 0px 0px 100vh rgb(0, 0, 0); */
+    /* outline: solid 2px white; */
+    border-radius: 10px;
+}
+
+
+.textbox2
+{
+
+    /* mix-blend-mode: lighten; */
+    position: absolute;
+    perspective: 1400px;
+    top: -1200px;
+    left: -560px;
+    transform: rotateX(-40deg) scale(1);
+    /* transform-style: preserve-3d; */
+    transition: 0.5s;
+    /* transition-delay: 1s; */
+}
+.textbox2:hover
+{
+
+    /* mix-blend-mode: lighten; */
+    position: absolute;
+    perspective: 1400px;
+    top: -1200px;
+    left: -560px;
+    transform: translateZ(300px) translateY(400px) rotateX(-40deg);
+    /* transform-style: preserve-3d; */
+    transition: 0.9s;
+}
+
+
+
+@font-face
+{
+    font-family: 'subway-ticker.regular';
+    src: url(shells/subway-ticker.regular.ttf);
+    /* font-style: normal; */
+    font-weight: 100;
+}
+@keyframes flicker
+{
+    0%
+    {
+        filter: brightness(1);
+    }
+    12%
+    {
+        filter: brightness(1);
+    }
+    13%
+    {
+        filter: brightness(2);
+    }
+    14%
+    {
+        filter: brightness(1);
+    }
+
+    35%
+    {
+        filter: brightness(1);
+    }
+    36%
+    {
+        filter: brightness(2);
+    }
+    37%
+    {
+        filter: brightness(1);
+    }
+    38%
+    {
+        filter: brightness(2);
+    }
+    39%
+    {
+        filter: brightness(1);
+    }
+    40%
+    {
+        filter: brightness(2);
+    }
+    42%
+    {
+        filter: brightness(1);
+    }
+    42%
+    {
+        filter: brightness(2);
+    }
+    43%
+    {
+        filter: brightness(1);
+    }
+    44%
+    {
+        filter: brightness(2);
+    }
+    45%
+    {
+        filter: brightness(1);
+    }
+    82%
+    {
+        filter: brightness(1);
+    }
+    83%
+    {
+        filter: brightness(2);
+    }
+    84%
+    {
+        filter: brightness(1);
+    }
+    100%
+    {
+        filter: brightness(1);
+    }
+
+
+
+}
+
+/* .textboxselector
+{
+    position: absolute;
+    perspective: 1000px;  
+
+
+} */
