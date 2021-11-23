@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Play when clicked</title>
+</head>
+<body>
+    <audio id="sound-oiseaux" src="/beep.mp3
+    " autostart="false"></audio>
+    
+    <audio id="sound-chat" src="/beep2.mp3
+    " autostart="false"></audio>
+    
+    
+    <button type="button" onclick="play('sound-oiseaux')">Oiseaux</button>
+    
+    <button type="button" onclick="play('sound-chat')">Chat</button>
+    <script>
+        function play(id) {
+    const audioElement = document.getElementById(id);
+  
+  resetAll();
+
+    if (audioElement.paused) {
+        audioElement.play();
+    }
+}
+
+function resetAll() {
+  const audioElements = document.querySelectorAll('audio[id^="sound-"]');
+  
+  audioElements.forEach(audioElement => {
+    audioElement.pause();
+    audioElement.currentTime = 0;
+  });
+  }
+    </script>
+
+</body>
+</html>

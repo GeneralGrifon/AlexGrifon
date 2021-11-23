@@ -1,0 +1,217 @@
+.person
+{
+    position: absolute;
+    background: rgba(0, 0, 0, 0.363);
+    text-align: center;
+    border-radius: 100px;
+    right: 480px;
+    transform: scale(1.5);
+    top: -430px;
+    box-shadow: 0 0 2px 0 rgb(255, 255, 255);
+    border: 2px solid #ffffff;
+    width: 100px;
+    height: 100px;
+    transition: 0.5s;
+    cursor: pointer;
+
+
+    background:rgba(0, 0, 0, 0.055);
+    position: absolute;
+    /* width: 155px; */
+    /* height: 155px; */
+    border: solid 3px white;
+    /* border-radius: 100px; */
+    border-radius: 50%;
+    /* transform: translate3d(-560px, -110px, 0px); */
+    z-index: 20;
+    transition: 0.5s;
+
+    background: linear-gradient(
+      180deg,
+      /* rgba(255,255,255,0.6) 0%, */
+      rgba(255, 255, 255, 0.5) 0%,
+      rgba(255, 255, 255, 0.322) 40%,
+      rgba(255, 255, 255, 0.185) 45%,
+      rgba(255,255,255,0.1) 50%,
+      rgba(0,0,0,0.0) 50%,
+      rgba(0,0,0,0.0) 50%,
+      rgba(0,0,0,0.0) 60%,
+      rgba(25, 114, 248, 0.438) 100%
+    ); 
+    border-image: none;
+    border-style: inset;
+
+}
+.person.active10
+{
+    
+    position: absolute;
+    background: rgba(0, 0, 0, 0.363);
+    text-align: center;
+    border-radius: 20px;
+    right: -150px;
+    top: -500px;
+    box-shadow: 0 0 3px 0 rgb(255, 255, 255);
+    border: 3px solid #ffffff;
+    width: 400px;
+    height: 400px;
+    display: block;
+    transition: 0.5s;
+}
+
+.p
+{
+    position: absolute;
+    width: 60px;
+    top: 17px;
+    left: 17px;
+    transform: scale(0.7);
+    filter: invert();
+    transition: 0.5s;
+    animation: rotate 10s infinite linear;
+    z-index: 100;
+    /* mix-blend-mode: screen; */ 
+}
+.person:hover #p
+{
+    animation: animate 10s infinite linear;
+}
+
+.person.active10 .p
+{
+    top: 100px;
+    left: -155px;
+    /* position: absolute; */
+    opacity: 1;
+    /* top: 110px; */
+    /* left: -135px; */
+    transition: 0.5s;
+}
+
+
+
+
+.person.active10 ul li 
+{
+    left: 80px;
+}
+
+.person #pp1
+{
+    top: 10px;
+    left: 0;
+    position: absolute;
+    width: 0px;
+    height: 0px;
+    margin: 0;
+    padding: 0;
+    transition: 0.3s;
+    opacity: 0;
+
+    
+}
+.person.active10 #pp1
+{
+    transition: 0.5s;
+    top: 20px;
+    left: 20px;
+    transition-delay: 0.25s;
+    position: absolute;
+    width: 150px;
+    height: 150px; 
+    border-radius: 10px;
+    border: 2px solid rgb(255, 255, 255); 
+    box-shadow: 0 0 3px 0 rgb(255, 255, 255);
+    opacity: 1;
+    
+}
+.person #pp2
+{
+    position: absolute;
+    width: 0px;
+    height: 0px;
+    margin: 0;
+    padding: 0;
+    top: 10px;
+    left: 60px;
+    transition: 0.3s;
+    opacity: 0;
+    
+}
+
+.person.active10 #pp2
+{
+    transition: 0.5s;
+    top: 0;
+    left: 200px;
+    transition-delay: 0.5s;
+    position: absolute;
+    margin: 20px;
+    width: 150px;
+    height: 150px; 
+    border-radius: 10px;
+    border: 2px solid rgb(255, 255, 255); 
+    box-shadow: 0 0 3px 0 rgb(255, 255, 255);
+    opacity: 1;
+}
+.person #pp3
+{
+    position: absolute;
+    width: 0px;
+    height: 0px;
+    margin: 0;
+    padding: 0;
+    top: 40px;
+    left: 0;
+    transition: 0.3s;
+    opacity: 0;
+}
+.person.active10 #pp3
+{
+    opacity: 1;
+    transition: 0.5s;
+    top: 200px;
+    left: 5px;
+    transition-delay: 0.75s;
+    position: absolute;
+    margin: 20px;
+    width: 150px;
+    height: 150px; 
+    border-radius: 10px;
+    border: 2px solid rgb(255, 255, 255); 
+    box-shadow: 0 0 3px 0 rgb(255, 255, 255);
+}
+.person #pp4
+{
+    position: absolute;
+    width: 0px;
+    height: 0px;
+    margin: 0;
+    padding: 0;
+    transition-delay: 0s;
+    top: 40px;
+    left: 70px;
+    transition: 0.3s;
+    opacity: 0;
+}
+.person.active10 #pp4
+{
+    opacity: 1;
+    top: 200px;
+    left: 200px;
+    opacity: 1;
+    transition: 0.5s;
+    transition-delay: 1s;
+    position: absolute;
+    margin: 20px;
+    width: 150px;
+    height: 150px; 
+    border-radius: 10px;
+    border: 2px solid rgb(255, 255, 255); 
+    box-shadow: 0 0 3px 0 rgb(255, 255, 255);
+}
+.person.active10 .pp4:hover
+{
+    transform: rotateY(180deg);
+}
+

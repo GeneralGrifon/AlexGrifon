@@ -1,0 +1,12 @@
+body {
+  background-color: grey;
+}
+
+.instrument {
+  height: 100px;
+}
+
+#strings {
+  background-color: blue;
+  text-align: center;
+}
