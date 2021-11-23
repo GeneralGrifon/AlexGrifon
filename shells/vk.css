@@ -1,0 +1,15 @@
+body
+{
+    width: 1000px;
+    height: 1000px;
+    background-color: aqua;
+    display: flex;
+}
+
+#vk_post_28799085_6093
+{
+    width: 50%;
+    height: 50%;
+    position: relative;
+    border:  solid 2px red;
+}
